@@ -1,8 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import { CompatClient, IFrame, IMessage, Stomp } from '@stomp/stompjs';
+import { useEffect } from 'react';
+import SockJS from 'sockjs-client';
 import './App.css';
+import logo from './logo.svg';
+
+const SOCKET_URL = 'http://localhost:8082/websocket';
 
 function App() {
+  let stompClient: CompatClient;
+  useEffect(() => {
+    const socket = new SockJS(SOCKET_URL)
+    stompClient = Stomp.over(() => socket);
+    stompClient.activate();
+    stompClient.onConnect = onConnected;
+    stompClient.onDisconnect = onDisconnected;
+    stompClient.debug = (msg) => console.log(msg)
+
+
+    return () => {
+      stompClient.disconnect();
+    }
+  }, []);
+
+  function onConnected(frame: IFrame) {
+    stompClient.send('/app/hello', {}, 'hello');
+    stompClient.subscribe('/topics/sales', (msg: IMessage) => console.log(JSON.parse(msg.body)))
+  }
+
+  function onSubscribeSaleFile(message: IMessage) {
+    console.log(message);
+  }
+
+  function onDisconnected() {
+    console.log('disconnected');
+
+  }
+
   return (
     <div className="App">
       <header className="App-header">
