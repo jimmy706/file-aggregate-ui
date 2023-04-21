@@ -18,4 +18,4 @@ In page `http://localhost:3000`, you can see the real-time calculation data that
 To see the detail of the file, you can click on file name or move to the url `http://localhost:3000/files/<file-index>`
 
 ## Example demonstration
-[![Example demo](/documents/example-demo.mp4)](/documents/example-demo.mp4)
+<iframe src="https://onedrive.live.com/embed?cid=A8B3BC36BC37ED91&resid=A8B3BC36BC37ED91%21128&authkey=ADzO9vQGdH2HXGE" width="320" height="170" frameborder="0" scrolling="no" allowfullscreen></iframe>
