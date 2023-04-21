@@ -16,6 +16,13 @@ This application used for the purpose of displaying aggregated data from kafka c
 
 In page `http://localhost:3000`, you can see the real-time calculation data that sending through websocket
 To see the detail of the file, you can click on file name or move to the url `http://localhost:3000/files/<file-index>`
+![Sales file overview](https://user-images.githubusercontent.com/34393773/233683440-6ba93b67-b493-4d91-b53f-875343c5fc17.png)
+
+![Sale file detail](https://user-images.githubusercontent.com/34393773/233683373-d01482d3-f405-4045-9ac2-640bfd5d6762.png)
+
 
 ## Example demonstration
-<iframe src="https://onedrive.live.com/embed?cid=A8B3BC36BC37ED91&resid=A8B3BC36BC37ED91%21128&authkey=ADzO9vQGdH2HXGE" width="320" height="170" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+
+https://user-images.githubusercontent.com/34393773/233682972-0806a4ca-b0b5-48be-ba27-68aa0a503049.mp4
+
