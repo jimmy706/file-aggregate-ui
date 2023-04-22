@@ -49,7 +49,7 @@ export default function IndexPage() {
 
     function renderSalesData() {
         return salesFiles.map((saleData, index) => (
-            <tr>
+            <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{saleData.readTime.toString()}</td>
                 <td>

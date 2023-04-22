@@ -1,15 +1,13 @@
-# Getting Started with Create React App
+## Prerequire
+- nodejs version 16 or above
+- npm build tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## How to start the app
 
 In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. run `npm install` to install necessary packages
+2. run `npm start` to start the application
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## About this application
 This application used for the purpose of displaying aggregated data from kafka consumer: `http://localhost:8082`

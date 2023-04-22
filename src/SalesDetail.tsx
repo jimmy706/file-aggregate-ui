@@ -28,7 +28,7 @@ export default function SalesDetail() {
             return null;
         }
         return salesData.data.map((prod, index) => (
-            <tr>
+            <tr key={index}>
                 <td>
                     {index + 1}
                 </td>
